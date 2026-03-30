@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Pollos Cochabamba - Iniciar Sesión</title>
+    
+    <link rel="icon" type="image/jpg" href="https://scontent.flpb2-2.fna.fbcdn.net/v/t39.30808-6/612536583_1328209045879481_6552602581414314530_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=MTSY2amYL90Q7kNvwH9wpTA&_nc_oc=AdoNnPeMPiKZupKtXBEYtfDfCk2YYpH4Nm88uleTdTYr-0gIzlnRiRwQed88lZ-W4NErz7mKx7VnLmGZrxsF0mV2&_nc_zt=23&_nc_ht=scontent.flpb2-2.fna&_nc_gid=MOXhgTcj5FRCGyV_cCDNzQ&_nc_ss=7a3a8&oh=00_AfzqqmU1AxaXtgwwkLK3hV_tkjLp4cqeMJia0wPX3OdINQ&oe=69CFC826">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+    <style>
+        :root {
+            --primary: #d4af37;
+            --secondary: #c53030;
+            --background-light: #fef7e5;
+            --text-light: #2d1f00;
+            --gray-text: #8a7c68;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo del logo arriba a la izquierda */
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+            border-radius: 4px;
+        }
+
+        .navbar {
+            background-color: rgba(254, 247, 229, 0.8) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #ffe082;
+        }
+
+        .nav-link {
+            color: var(--gray-text) !important;
+            font-weight: 500;
+        }
+
+        .btn-auth-nav {
+            background-color: var(--secondary);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            padding: 8px 20px;
+            font-weight: 600;
+        }
+
+        .login-card {
+            background: white;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            max-width: 450px;
+            width: 100%;
+        }
+
+        .form-control {
+            padding: 0.75rem;
+            border-color: #dee2e6;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+        }
+
+        .btn-login {
+            background-color: var(--primary);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            padding: 12px;
+            font-weight: 700;
+            transition: background 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #b8962f;
+            color: white;
+        }
+
+        .text-primary-custom { color: var(--primary); }
+        .text-secondary-custom { color: var(--secondary); }
+
+        footer {
+            background-color: white;
+            border-top: 1px solid #ffe082;
+            margin-top: auto;
+        }
+
+        .social-link {
+            color: var(--gray-text);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            color: var(--primary) !important;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="https://scontent.flpb2-2.fna.fbcdn.net/v/t39.30808-6/612536583_1328209045879481_6552602581414314530_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=MTSY2amYL90Q7kNvwH9wpTA&_nc_oc=AdoNnPeMPiKZupKtXBEYtfDfCk2YYpH4Nm88uleTdTYr-0gIzlnRiRwQed88lZ-W4NErz7mKx7VnLmGZrxsF0mV2&_nc_zt=23&_nc_ht=scontent.flpb2-2.fna&_nc_gid=MOXhgTcj5FRCGyV_cCDNzQ&_nc_ss=7a3a8&oh=00_AfzqqmU1AxaXtgwwkLK3hV_tkjLp4cqeMJia0wPX3OdINQ&oe=69CFC826" alt="Logo Pollos Cochabamba">
+                <span class="fw-bold">Pollos Cochabamba</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produccion.html">Producción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="inicio-sesion.html" class="btn btn-auth-nav">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container d-flex flex-column align-items-center justify-content-center py-5 grow">
+        <div class="login-card p-4 p-sm-5">
+            <div class="text-center mb-4">
+                <h1 class="h2 fw-black mb-2">Accede a tu Cuenta</h1>
+                <p class="text-muted small">Ingresa tus credenciales para administrar tus pedidos.</p>
+            </div>
+
+            <form action="#" method="POST">
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold small">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="tu.correo@ejemplo.com" required>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <label for="password" class="form-label fw-semibold small">Contraseña</label>
+                        <a href="#" class="small text-decoration-none text-primary-custom fw-medium">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn btn-login w-100 mt-3">
+                    Iniciar Sesión
+                </button>
+            </form>
+
+            <div class="text-center mt-4">
+                <p class="text-muted small">¿No tienes cuenta?
+                    <a href="registro.html" class="text-secondary-custom fw-bold text-decoration-none">Regístrate aquí</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4 text-center text-md-start">
+                <div class="col-md-3">
+                    <h3 class="h5 fw-bold mb-3">Pollos Cochabamba</h3>
+                    <p class="small text-muted">El sabor tradicional que une a Bolivia. Hecho con amor, desde 1995.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="h6 fw-bold mb-3">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled small">
+                        <li><a href="menu.html" class="text-decoration-none text-muted">Menú</a></li>
+                        <li><a href="ventas.html" class="text-decoration-none text-muted">Pedidos a Domicilio</a></li>
+                        <li><a href="contacto.html" class="text-decoration-none text-muted">Sucursales</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="h6 fw-bold mb-3">Contáctanos</h4>
+                    <p class="small text-muted mb-1">Av. Principal 456, Cochabamba</p>
+                    <p class="small text-muted mb-1">(+591) 4 123 4567</p>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <h4 class="h6 fw-bold mb-3">Síguenos</h4>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+                        <a href="https://www.facebook.com/polloscochabamba/" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/polloscochabamba/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@polloscochabamba" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 text-muted">
+            <p class="text-center small text-muted mb-0">© 2026 Pollos Cochabamba. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
